@@ -34,8 +34,8 @@ const Home = (): JSX.Element => {
                     </div>
                 </div>
                 <div className='items-center justify-center hidden lg:flex'>
-                    <div className="rounded-xl shadow-xl bg-indigo-500 h-80">
-                        <p className="text-white px-4 p-5">Lorem ipsum dolor sit amet, consectetur adip!</p>
+                    <div className="rounded-xl shadow-xl bg-indigo-500 h-80 w-80 flex items-center">
+                        <p className="text-white text-center text-4xl italic p-12">"Lorem ipsum dolor sit amet, consectetur adip!"</p>
                     </div>
                 </div>
             </div>
