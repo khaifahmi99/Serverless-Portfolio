@@ -1,11 +1,11 @@
-import { Home } from "./views/Home";
-
+import Experience from "./views/Experience";
+import Home from "./views/Home";
 
 function App() {
   return (
     <>
       <Home />
-      <hr />
+      <Experience />
     </>
   );
 }
