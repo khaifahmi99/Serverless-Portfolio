@@ -1,3 +1,4 @@
+import Button from "../../components/Button";
 import { QuoteCard } from "../../components/Card";
 
 const Home = (): JSX.Element => {
@@ -17,20 +18,10 @@ const Home = (): JSX.Element => {
                             </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                 <div className="rounded-md shadow">
-                                <a
-                                    href="https://github.com"
-                                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-white font-medium rounded-md bg-indigo-400 hover:bg-indigo-500 md:py-4 md:text-lg md:px-10"
-                                >
-                                    GITHUB
-                                </a>
+                                    <Button variant="link" text="GITHUB" link="https://github.com" />
                                 </div>
                                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                                <a
-                                    href="https://twitter.com"
-                                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-white font-medium rounded-md bg-indigo-400 hover:bg-indigo-500 md:py-4 md:text-lg md:px-10"
-                                >
-                                    TWITTER
-                                </a>
+                                    <Button variant="link" text="LINKEDIN" link="https://linkedin.com" />
                                 </div>
                             </div>
                             </div>
