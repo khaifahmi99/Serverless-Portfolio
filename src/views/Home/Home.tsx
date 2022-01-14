@@ -1,3 +1,5 @@
+import { QuoteCard } from "../../components/Card";
+
 const Home = (): JSX.Element => {
     return (
         <div className="bg-indigo-100">
@@ -34,9 +36,9 @@ const Home = (): JSX.Element => {
                             </div>
                         </div>
                     </div>
-                    <div className='items-center justify-center hidden lg:flex'>
-                        <div className="rounded-xl shadow-xl bg-indigo-500 h-80 w-80 flex items-center">
-                            <p className="text-white text-center text-4xl italic p-12">"Lorem ipsum dolor sit amet, consectetur adip!"</p>
+                    <div className='items-center justify-center hidden lg:flex border-4'>
+                        <div className='h-80 w-80'>
+                            <QuoteCard quote='"Lorem ipsum dolor sit amet, consectetur adip!"' />
                         </div>
                     </div>
                 </div>
