@@ -17,9 +17,7 @@ const Home = (): JSX.Element => {
                                 [Brief Description Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.]
                             </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                                <div className="rounded-md shadow">
-                                    <Button variant="link" text="GITHUB" link="https://github.com" />
-                                </div>
+                                <Button variant="link" text="GITHUB" link="https://github.com" />
                                 <div className="mt-3 sm:mt-0 sm:ml-3">
                                     <Button variant="link" text="LINKEDIN" link="https://linkedin.com" />
                                 </div>
