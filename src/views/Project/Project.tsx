@@ -1,7 +1,6 @@
 import { ChevronDoubleRightIcon } from "@heroicons/react/solid";
 import React from "react";
 import { InformationCard } from "../../components/Card";
-import { Duration } from "../../components/Card/InformationCard";
 import Title from "../../components/Title";
 
 const Project = (): JSX.Element => {

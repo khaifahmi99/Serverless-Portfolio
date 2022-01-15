@@ -6,7 +6,7 @@ const Home = (): JSX.Element => {
         <div className="bg-indigo-100">
             <div className="max-w-7xl mx-auto z-20">
                 <div className="flex flex-row">
-                    <div className="lg:w-[60%] md:w-full pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+                    <div className="lg:w-3/5 md:w-full pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
                         <div className="mt-10 mx-autopx-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                             <div className="sm:text-center lg:text-left">
                             <div className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
