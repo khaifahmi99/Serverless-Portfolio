@@ -70,7 +70,7 @@ const Experience = (): JSX.Element => {
                     </div>
                 ))}
             </div>
-            <div className='flex flex-row space-x-4 w-full h-96'>
+            <div className='hidden lg:flex flex-row space-x-4 w-full h-96'>
                 <div className='w-3/4 hidden lg:flex'>
                     <InformationCard 
                         link={activeExperience.link}
