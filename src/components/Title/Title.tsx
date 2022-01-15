@@ -13,9 +13,9 @@ const Title: FC<TitleProps> = ({
         >
             {text}
         </h1>
-        <h1 
+        <span
             className='w-full h-[2.2em] border-b-4 border-gray-300'
-        ></h1>
+        ></span>
     </div>
 )
 
