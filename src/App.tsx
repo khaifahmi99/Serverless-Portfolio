@@ -1,6 +1,7 @@
 import Contact from "./views/Contact";
 import Education from "./views/Education";
 import Experience from "./views/Experience";
+import Footer from "./views/Footer";
 import Home from "./views/Home";
 import Project from "./views/Project";
 import Skill from './views/Skill';
@@ -14,6 +15,7 @@ function App() {
       <Experience />
       <Project />
       <Contact />
+      <Footer />
     </>
   );
 }
