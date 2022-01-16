@@ -34,7 +34,7 @@ const Testimonial = (): JSX.Element => {
 
             <div className='text-center'>
                 <div className='h-48 flex items-center'>
-                    <h1 className='italic font-semibold text-5xl text-indigo-500 mb-12 mx-auto w-3/5'>
+                    <h1 className='italic font-semibold text-5xl text-indigo-500 mb-12 mx-auto w-full lg:w-3/5'>
                         "{activeReview.quote}"
                     </h1>
                 </div>
