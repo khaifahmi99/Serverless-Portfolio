@@ -1,6 +1,9 @@
-import { Stack, StackProps } from 'aws-cdk-lib';
+import { RemovalPolicy, Stack, StackProps } from 'aws-cdk-lib';
+import { CloudFrontWebDistribution, OriginAccessIdentity, PriceClass } from 'aws-cdk-lib/aws-cloudfront';
+import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins';
 import { AnyPrincipal, PolicyStatement } from 'aws-cdk-lib/aws-iam';
 import { BlockPublicAccess, Bucket } from 'aws-cdk-lib/aws-s3';
+import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment';
 import { Construct } from 'constructs';
 
 export class InfrastructureStack extends Stack {
@@ -9,19 +12,30 @@ export class InfrastructureStack extends Stack {
 
     const bucket = new Bucket(this, 'bucket', {
       bucketName: 'serverless-portfolio-bucket',
-      blockPublicAccess: new BlockPublicAccess({ restrictPublicBuckets: false }),
-      websiteIndexDocument: 'index.html'
+      websiteIndexDocument: 'index.html',
+      websiteErrorDocument: 'index.html',
+      removalPolicy: RemovalPolicy.DESTROY
     });
 
-    const bucketPolicy = new PolicyStatement({
-      actions: ['s3:GetObject'],
-      resources: [
-        `${bucket.bucketArn}/*`
-      ],
-      principals: [new AnyPrincipal()],
+    const cloudfrontOAI = new OriginAccessIdentity(this, 'OAI'); 
+    
+    bucket.grantRead(cloudfrontOAI.grantPrincipal);
+
+    const cfnDistribution = new CloudFrontWebDistribution(this, 'cfnDistribution', {
+      priceClass: PriceClass.PRICE_CLASS_100,
+      originConfigs: [
+        {
+          s3OriginSource: {
+            s3BucketSource: bucket
+          },
+          behaviors: [{ isDefaultBehavior: true }]
+        }
+      ]
     });
 
-    bucket.addToResourcePolicy(bucketPolicy);
-
+    new BucketDeployment(this, 'bucketDeployment', {
+      sources: [Source.asset('../client/build')],
+      destinationBucket: bucket,
+    });
   }
 }
