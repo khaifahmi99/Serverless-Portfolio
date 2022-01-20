@@ -17,7 +17,7 @@ const Button: FC<ButtonProps> = ({
         {variant === 'button' && (
             <span 
                 onClick={onClick}
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-white font-medium rounded-md bg-indigo-400 hover:bg-indigo-500 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-white font-medium rounded-md bg-indigo-500 hover:bg-indigo-600 md:text-lg md:px-10"
             >
                 {text}
             </span>
@@ -25,7 +25,7 @@ const Button: FC<ButtonProps> = ({
         {variant === 'link' && (
             <a
                 href={link}
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-white font-medium rounded-md bg-indigo-400 hover:bg-indigo-500 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-white font-medium rounded-md bg-indigo-500 hover:bg-indigo-600 md:text-lg md:px-10"
             >
                 {text}
             </a>
