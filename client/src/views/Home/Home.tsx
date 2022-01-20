@@ -1,4 +1,3 @@
-import Button from "../../components/Button";
 import { QuoteCard } from "../../components/Card";
 import { GithubIcon, TwitterIcon, LinkedinIcon } from "../../components/Icons";
 

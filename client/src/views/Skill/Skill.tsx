@@ -43,8 +43,8 @@ const Skill = (): JSX.Element => {
                                         </div>
                                     </div>
                                     <h1 className='font-bold'>{skill.name}</h1>
-                                    <hr className='my-2' />
-                                    <p className='text-sm text-clip overflow-hidden'>{skill.description}</p>
+                                    <hr className='my-4' />
+                                    <p className='text-sm text-gray-900 text-clip overflow-auto'>{skill.description}</p>
                                 </div>
                             </Card>
                         </div>

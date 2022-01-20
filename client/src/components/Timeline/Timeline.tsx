@@ -14,7 +14,7 @@ export interface TimelineProps {
 const Timeline = ({ items }: TimelineProps): JSX.Element => {
     return (
         <div className="relative wrap overflow-hidden p-10 h-full text-white">
-            <div className="border-2-2 absolute border-opacity-20 border-indigo-500 h-full border" style={{ left: '50%' }}></div>
+            <div className="border-2-2 absolute border-indigo-500 h-full border" style={{ left: '50%' }}></div>
             
             {items.map((item, idx) => {
                 const isAlternate = idx % 2 === 0;
@@ -22,7 +22,7 @@ const Timeline = ({ items }: TimelineProps): JSX.Element => {
             return (
                 <div className={`mb-8 flex justify-between items-center w-full ${position}`}>
                     <div className="order-1 w-5/12"></div>
-                    <div className="z-20 flex items-center order-1 shadow-xl w-8 h-8 rounded-full bg-indigo-500">
+                    <div className="z-10 flex items-center order-1 shadow-xl w-8 h-8 rounded-full bg-indigo-300 border-4 border-indigo-500">
                     </div>
                     <div className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4 bg-indigo-500">
                         {item.period && (
