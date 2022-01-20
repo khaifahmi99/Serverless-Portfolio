@@ -21,6 +21,9 @@ const Home = (): JSX.Element => {
                                 <div className="mt-3 sm:mt-0 sm:ml-3">
                                     <Button variant="link" text="LINKEDIN" link="https://linkedin.com" />
                                 </div>
+                                <div className="mt-3 sm:mt-0 sm:ml-3">
+                                    <Button variant="link" text="TWITTER" link="https://twitter.com" />
+                                </div>
                             </div>
                             </div>
                         </div>
