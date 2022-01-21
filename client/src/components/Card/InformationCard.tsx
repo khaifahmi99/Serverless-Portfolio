@@ -48,7 +48,7 @@ const InformationCard: FC<InformationCardProps> = ({
                                 <div className='flex my-auto'>
                                     <CheckCircleIcon className={`h-6 w-6 mr-2 text-white`}/>
                                 </div>
-                                <p>{highlight}</p>
+                                <p className='pb-3 leading-tight'>{highlight}</p>
                             </div>
                         ))}
                     </div>
@@ -56,7 +56,7 @@ const InformationCard: FC<InformationCardProps> = ({
                         {meta?.slice(0, 5).map((item, idx) => (
                             <span
                                 id={`item-${idx}`} 
-                                className='px-2 py-1 bg-white text-indigo-600 ml-2 rounded-lg truncate'
+                                className='px-2 py-1 bg-white font-semibold text-indigo-600 ml-2 rounded-lg truncate'
                             >
                                 {item}
                             </span>
