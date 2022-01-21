@@ -5,7 +5,4 @@
 tasks:
   - init: cd client && npm install && npm run build
     command: cd client && npm run start
-vscode:
-  extensions:
-    - dbaeumer.vscode-eslint
 
