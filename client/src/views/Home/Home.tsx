@@ -1,7 +1,7 @@
-import { QuoteCard } from "../../components/Card";
-import { GithubIcon, TwitterIcon, LinkedinIcon } from "../../components/Icons";
+import { QuoteCard } from '../../components/Card';
+import { GithubIcon, TwitterIcon, LinkedinIcon } from '../../components/Icons';
 
-const Home = (): JSX.Element => {
+function Home(): JSX.Element {
   const github: string | undefined = 'https://github.com';
   const linkedin: string | undefined = 'https://linkedin.com';
   const twitter: string | undefined = 'https://twitter.com';
@@ -14,7 +14,8 @@ const Home = (): JSX.Element => {
             <div className="mt-10 mx-autopx-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <div className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                  <h2 className="text-5xl">[Job Title]</h2>{" "}
+                  <h2 className="text-5xl">[Job Title]</h2>
+                  {' '}
                   <h2 className="text-indigo-600 text-6xl">
                     [First] [Last Name]
                   </h2>
@@ -28,7 +29,7 @@ const Home = (): JSX.Element => {
                   {github && (
                     <a
                       href={github}
-                      className={`h-8 w-8 mr-6 hover:text-indigo-600`}
+                      className="h-8 w-8 mr-6 hover:text-indigo-600"
                     >
                       <GithubIcon />
                     </a>
@@ -36,7 +37,7 @@ const Home = (): JSX.Element => {
                   {twitter && (
                     <a
                       href={twitter}
-                      className={`h-8 w-8 mr-6 hover:text-indigo-600`}
+                      className="h-8 w-8 mr-6 hover:text-indigo-600"
                     >
                       <TwitterIcon />
                     </a>
@@ -44,7 +45,7 @@ const Home = (): JSX.Element => {
                   {linkedin && (
                     <a
                       href={linkedin}
-                      className={`h-8 w-8 mr-6 hover:text-indigo-600`}
+                      className="h-8 w-8 mr-6 hover:text-indigo-600"
                     >
                       <LinkedinIcon />
                     </a>
@@ -62,6 +63,6 @@ const Home = (): JSX.Element => {
       </div>
     </div>
   );
-};
+}
 
 export default Home;

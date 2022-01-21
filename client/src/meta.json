@@ -1,0 +1,160 @@
+{
+    "firstName": "",
+    "lastName": "",
+    "primaryEmail": "",
+    "secondaryEmail": "",
+    "jobTitle": "",
+    "personalQuote": "",
+    "briefDescription": "",
+    "links": {
+        "github": "",
+        "linkedin": "",
+        "twitter": null
+    },
+    "experiences": [
+        {
+            "role": "",
+            "company": "",
+            "yearStart": "",
+            "yearEnd": "",
+            "highlights": [
+                "",
+                "",
+                ""
+            ],
+            "tags": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "role": "",
+            "company": "",
+            "yearStart": "",
+            "yearEnd": "",
+            "highlights": [
+                "",
+                "",
+                ""
+            ],
+            "tags": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "role": "",
+            "company": "",
+            "yearStart": "",
+            "yearEnd": "",
+            "highlights": [
+                "",
+                "",
+                ""
+            ],
+            "tags": [
+                "",
+                "",
+                ""
+            ]
+        }
+    ],
+    "educations": [
+        {
+            "school": "",
+            "program": "",
+            "yearStart": "",
+            "yearEnd": "",
+            "description": ""
+        },
+        {
+            "school": "",
+            "program": "",
+            "yearStart": "",
+            "yearEnd": "",
+            "description": ""
+        },
+        {
+            "school": "",
+            "program": "",
+            "yearStart": "",
+            "yearEnd": "",
+            "description": ""
+        }
+    ],
+    "projects": [
+        {
+            "name": "",
+            "year": "",
+            "link": "",
+            "highlights": [
+                "", 
+                "", 
+                ""
+            ],
+            "tags": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "year": "",
+            "link": "",
+            "highlights": [
+                "", 
+                "", 
+                ""
+            ],
+            "tags": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "",
+            "year": "",
+            "link": "",
+            "highlights": [
+                "", 
+                "", 
+                ""
+            ],
+            "tags": [
+                "",
+                "",
+                ""
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "icon": "",
+            "name": "",
+            "description": ""
+        },
+        {
+            "icon": "",
+            "name": "",
+            "description": ""
+        }
+    ],
+    "reviews": [
+        {
+            "quote": "",
+            "reviewer": "",
+            "jobTitle": "",
+            "companyName": ""
+        },
+        {
+            "quote": "",
+            "reviewer": "",
+            "jobTitle": "",
+            "companyName": ""
+        }
+    ]
+}
