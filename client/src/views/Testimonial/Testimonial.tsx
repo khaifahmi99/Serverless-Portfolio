@@ -1,31 +1,20 @@
 import React from 'react';
 import Title from '../../components/Title';
+import { useProfileContext } from '../../ProfileContext';
 
 function Testimonial(): JSX.Element {
-  // TODO: fetch from JSON
-  const REVIEWS = [
-    {
-      id: '1',
-      quote: 'Referree Quote a very very long one, how does the UI deals with this. Lets see it in action',
-      author: {
-        name: 'Gary Hendriksen',
-        title: 'Sr. Manager',
-        company: 'Gatsby',
-      },
-    },
-    {
-      id: '2',
-      quote: 'A very talented person with great passion!',
-      author: {
-        name: 'Atlas Monagee',
-        title: 'Software Engineer',
-        company: 'Luca Studio',
-      },
-    },
-  ];
+  const profile = useProfileContext();
+  const reviews = profile.reviews.map((review, idx) => ({
+    id: `review-id-${idx}`,
+    ...review,
+  }));
 
-  // TODO: check if we can access index 0
-  const [activeReview, setActiveReview] = React.useState(REVIEWS[0]);
+  const defaultReview = reviews.length > 0 ? reviews[0] : null;
+  const [activeReview, setActiveReview] = React.useState(defaultReview);
+
+  if (!activeReview) {
+    return <></>;
+  }
 
   return (
     <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8">
@@ -40,18 +29,19 @@ function Testimonial(): JSX.Element {
           </h1>
         </div>
         <h2 className="font-bold text-xl">
-          {activeReview.author.name}
+          {activeReview.reviewer}
         </h2>
         <h3 className="text-lg">
-          {activeReview.author.title}
+          {activeReview.jobTitle}
           {' '}
           at
-          {activeReview.author.company}
+          {' '}
+          {activeReview.companyName}
         </h3>
       </div>
 
       <div className="flex flex-row justify-center space-x-2 pt-4">
-        {REVIEWS.slice(0, 3).map((review) => {
+        {reviews.slice(0, 3).map((review) => {
           const isActive = review.id === activeReview.id;
           const backgroundColor = isActive ? 'bg-indigo-500' : 'bg-indigo-200';
 
