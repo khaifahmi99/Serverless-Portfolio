@@ -3,7 +3,7 @@ export interface Basic {
     lastName: string;
     jobTitle: string;
     personalQuote: string;
-    briefDesription: string;
+    briefDescription: string;
     primaryEmail: string;
     secondaryEmail?: string | null | undefined;
     links?: {

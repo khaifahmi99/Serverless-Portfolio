@@ -1,163 +1,160 @@
 {
-    "firstName": "",
-    "lastName": "",
-    "primaryEmail": "",
-    "secondaryEmail": "",
-    "jobTitle": "",
-    "personalQuote": "",
-    "briefDescription": "",
+    "firstName": "Khai Fahmi",
+    "lastName": "Zaki",
+    "primaryEmail": "khaifahmi99@gmail.com",
+    "secondaryEmail": null,
+    "jobTitle": "Full Stack Developer",
+    "personalQuote": "Never Give Up!",
+    "briefDescription": "I have a education background in Data Science and IoT with a strong skills in Web/Mobile Development. Always liked building new and interesting stuffs on my free time. I also spend my free times with cooking, games and gardening!",
     "links": {
-        "github": "",
-        "linkedin": "",
+        "github": "https://khaifahmi99@gmail.com/khaifahmi99",
+        "linkedin": "https://www.linkedin.com/in/khaifahmi/",
         "twitter": null
     },
     "experiences": [
         {
-            "role": "",
-            "company": "",
-            "yearStart": "",
-            "yearEnd": "",
+            "role": "Full Stack Developer",
+            "company": "accesstel",
+            "yearStart": 2021,
+            "yearEnd": null,
             "highlights": [
-                "",
-                "",
-                ""
+                "Improved the workflow efficiency and security by integrating Devops tools such as Snyk",
+                "Deliver a highly standard feature that has yet to be introduced in the domain"
             ],
             "tags": [
-                "",
-                "",
-                ""
+                "Microservices",
+                "AWS",
+                "React",
+                "Typescript",
+                "ElasticSearch"
             ],
-            "link": ""
+            "link": null
         },
         {
-            "role": "",
-            "company": "",
-            "yearStart": "",
-            "yearEnd": "",
+            "role": "Junior Full Stack Developer",
+            "company": "Mobble.io",
+            "yearStart": 2020,
+            "yearEnd": 2021,
             "highlights": [
-                "",
-                "",
-                ""
+                "Lead the front-end team including feature development and deployment",
+                "Delivered the most requested feature, the farm map feature to both web and mobile application",
+                "Youngest in the team"
             ],
             "tags": [
-                "",
-                "",
-                ""
+                "React",
+                "GraphQL",
+                "React Native"
             ],
-            "link": ""
+            "link": null
         },
         {
-            "role": "",
-            "company": "",
-            "yearStart": "",
-            "yearEnd": "",
+            "role": "Research Affiliate",
+            "company": "CSIRO Data61",
+            "yearStart": 2019,
+            "yearEnd": 2020,
             "highlights": [
-                "",
-                "",
-                ""
+                "Researched and Developed a machine learning algorithm to score and rank resumes",
+                "Look into critical aspects in AI ethics used in the industry, including the explainability of a machine learning model",
+                "Supervised by two researchers from Swinburne University and Western Sydney University"
             ],
             "tags": [
-                "",
-                "",
-                ""
+                "SKLearn",
+                "Docker",
+                "Python",
+                "Django"
             ],
-            "link": ""
+            "link": null
         }
     ],
     "educations": [
         {
-            "school": "",
-            "program": "",
-            "yearStart": "",
-            "yearEnd": "",
-            "description": ""
+            "school": "Swinburne University of Technology",
+            "program": "Bachelor in Computer Science",
+            "yearStart": 2018,
+            "yearEnd": 2021,
+            "description": "Graduated from a 3-years bachelor programme with a CGPA of 4.0 (total of 24 units) . Majoring in Data Science and Internet of Things (IoT) while introduced to other areas including Web/Mobile application development, cloud computing, data structures, games, network and security. Also took part in a Final Year Project (FYP) which was a project to develop a visualisation tool in Virtual Reality for Swinburne's Centre for Astrophysics and Supercomputing and did several internships."
         },
         {
-            "school": "",
-            "program": "",
-            "yearStart": "",
-            "yearEnd": "",
-            "description": ""
-        },
-        {
-            "school": "",
-            "program": "",
-            "yearStart": "",
-            "yearEnd": "",
-            "description": ""
+            "school": "Monash University",
+            "program": "Monash University Foundation Year",
+            "yearStart": 2017,
+            "yearEnd": 2018,
+            "description": "Achieved an Australian Matriculation Score of 89.00% for the Monash University Foundation Year programme offered by Monash University at Sunway College, KL. This programme is part of the requirements to pursue the bachelor programme in Australia. Subjects taken include Information Technology, Advanced Mathematics, English and Mathematics and was awarded the 'High Achiever' award at the end of the programme."
         }
     ],
     "projects": [
         {
-            "name": "",
-            "year": "",
-            "link": "",
+            "name": "Farm Management Mobile and Web Application",
+            "year": 2021,
+            "link": null,
             "highlights": [
-                "", 
-                "", 
-                ""
+                "While working as a developer intern at Mobble, I am responsible in developing and maintaining farming management website and mobile application.", 
+                "Working in a team of 4 developers with diverse background, and technologies used include React and React Native, Typescript, REST, AWS and GraphQL.", 
+                "I have been highly involved in all the SDLC areas and also taught to deploy the application using CI/CD technologies."
             ],
             "tags": [
-                "",
-                "",
-                ""
+                "Typescript",
+                "React",
+                "React Native",
+                "GraphQL"
             ]
         },
         {
-            "name": "",
-            "year": "",
-            "link": "",
+            "name": "IoT Covid-19 Cough Detection",
+            "year": 2020,
+            "link": null,
             "highlights": [
-                "", 
-                "", 
-                ""
+                "Developed a cough detection prototype in public spaces using audio and image processing to avoid the spread of Covid-19. This project aims to compare the efficiency of machine learning in embedded devices such as Arduino Portenta H7, OpenMV Camera and Arduino Nano BLE.", 
+                "The deep learning models are deployed as Tensorflow-Lite models while developed in Keras.", 
+                "The outcomes are compiled in a research paper that that covers other covid-19 solutions.",
+                "This project is related to a research-based unit at Swinburne University."
             ],
             "tags": [
-                "",
-                "",
-                ""
+                "Keras",
+                "Tensorflow Lite",
+                "AWS",
+                "Embedded Device"
             ]
         },
         {
-            "name": "",
-            "year": "",
-            "link": "",
+            "name": "Resume Analytics",
+            "year": 2020,
+            "link": null,
             "highlights": [
-                "", 
-                "", 
-                ""
+                "Working on a research paper and project development under the supervision of 2 senior lecturers from Swinburne University of Technology and Western Sydney University during the period of CSIRO Data61 summer vacation program 2019/2020.", 
+                "Delivered a prototype at the end of the program and continue working on writing research paper.", 
+                "I developed skills and have a deep understanding focusing around Machine Learning, Natural Language Processing and Web Development along the program."
             ],
             "tags": [
-                "",
-                "",
-                ""
+                "Machine Learning",
+                "Natural Language Processing"
             ]
         }
     ],
     "skills": [
         {
-            "icon": "",
-            "name": "",
-            "description": ""
+            "icon": "computer",
+            "name": "Web/Mobile Development",
+            "description": "Proficient and have experience in modern framework such as React, React Native and integrating them with other services"
         },
         {
-            "icon": "",
-            "name": "",
-            "description": ""
+            "icon": null,
+            "name": "Machine Learning",
+            "description": "Have a deep understanding and able to do the work across entire ML cycle"
         }
     ],
     "reviews": [
         {
-            "quote": "",
-            "reviewer": "",
-            "jobTitle": "",
-            "companyName": ""
+            "quote": "Talented and always show great effort in delivering hight quality work",
+            "reviewer": "Jock Lawrence",
+            "jobTitle": "CEO",
+            "companyName": "Mobble.io"
         },
         {
-            "quote": "",
-            "reviewer": "",
-            "jobTitle": "",
-            "companyName": ""
+            "quote": "Dedicated and passionate, and willing to learn anything",
+            "reviewer": "Dr. Ali Yavari",
+            "jobTitle": "Senior Researcher",
+            "companyName": "Swinburne University of Technology"
         }
     ]
 }

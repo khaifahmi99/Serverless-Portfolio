@@ -1,5 +1,5 @@
 export interface Skill {
     name: string;
     description: string;
-    icon?: 'computer' | 'film';
+    icon?: string | null | undefined;
 }
