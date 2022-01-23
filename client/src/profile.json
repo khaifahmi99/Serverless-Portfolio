@@ -24,42 +24,39 @@
         "__description__": "Required field, set it to an empty array 'experiences: []' if it is not relevant. This section will be hidden if it is set an empty array.",
         "__wide_screen__": "All experiences will be shown",
         "__small_screen__": "Only the FIRST TWO experiences will be shown",
-        "__order__": "Please ensure that the experiences are ordered in a reverse cronological order. Starting with the most recent"
+        "__order__": "Please ensure that the experiences are ordered in a reverse cronological order. Starting with the most recent",
+        "__field_yearEnd__": "(optional) For experience that has no year end (such as your current work experience), either omit this field, set to undefined or null",
+        "__field_tags__": "(optional) array of strings, can be set to undefined, null or []",
+        "__field_link__": "(optional) set it to null or undefined, or omit the field entirely. The link will only be shown if the value is a string"
     },
     "experiences": [
         {
             "role": "Web Developer",
             "company": "Company A",
             "yearStart": 2021,
-            "__yearEnd__": "(optional) For experience that has no year end (such as your current work experience), either omit this field, set to undefined or null",
             "yearEnd": null,
             "highlights": [
                 "Improved the performance by 23% in the last year",
                 "Gained an increase of unique visitors by 66% in 2020"
             ],
-            "__tags__": "(optional) array of strings, can be set to undefined, null or []",
             "tags": [
                 "HTML",
                 "CSS"
             ],
-            "__link__": "(optional) set it to null or undefined, or omit the field entirely. The link will only be shown if the value is a string",
             "link": null
         },
         {
             "role": "Intern Web Developer",
             "company": "Company A",
             "yearStart": 2020,
-            "__yearEnd__": "(optional) For experience that has no year end (such as your current work experience), either omit this field, set to undefined or null",
             "yearEnd": 2021,
             "highlights": [
                 "Developed a filtering mechanism for the catalog page"
             ],
-            "__tags__": "(optional) array of strings, can be set to undefined, null or []",
             "tags": [
                 "HTML",
                 "CSS"
             ],
-            "__link__": "(optional) set it to null or undefined, or omit the field entirely. The link will only be shown if the value is a string",
             "link": null
         }
     ],
@@ -67,14 +64,14 @@
         "__description__": "Required field, set it to an empty array 'educations: []' if it is not relevant. This section will be hidden if it is set an empty array.",
         "__wide_screen__": "All educations will be shown",
         "__small_screen__": "All educations will be shown",
-        "__order__": "Please ensure that the educations are ordered in a reverse cronological order. Starting with the most recent"
+        "__order__": "Please ensure that the educations are ordered in a reverse cronological order. Starting with the most recent",
+        "__field_yearEnd__": "(optional) For educations that has no year end (not graduated), either omit this field, set to undefined or null"
     },
     "educations": [
         {
             "school": "University of Example",
             "program": "Bachelor in Computer Science",
             "yearStart": 2017,
-            "__yearEnd__": "(optional) For educations that has no year end (not graduated), either omit this field, set to undefined or null",
             "yearEnd": 2019,
             "description": "Graduated from a 3-years bachelor programme with a CGPA of 3.2 (total of 24 units) . Majoring in Web Development and had completed a Final Year Project of creating an HTML Game using Javascript, CSS and HTML"
         },
@@ -82,7 +79,6 @@
             "school": "Example College",
             "program": "Cambridge A-Levels",
             "yearStart": 2016,
-            "__yearEnd__": "(optional) For educations that has no year end (not graduated), either omit this field, set to undefined or null",
             "yearEnd": 2017,
             "description": "A one-year program as a part of a requirement to qualify into a bachelor programe in Australia"
         }
@@ -91,13 +87,13 @@
         "__description__": "Required field, set it to an empty array 'projects: []' if it is not relevant. This section will be hidden if it is set an empty array.",
         "__wide_screen__": "All projects will be shown",
         "__small_screen__": "Only the FIRST TWO projects will be shown",
-        "__order__": "Please ensure that the projects are ordered in a reverse cronological order. Starting with the most recent"
+        "__order__": "Please ensure that the projects are ordered in a reverse cronological order. Starting with the most recent",
+        "__field_link__": "(optional) set it to null or undefined, or omit the field entirely. The link will only be shown if the value is a string"
     },
     "projects": [
         {
             "name": "Project ABC",
             "year": 2021,
-            "__link__": "(optional) set it to null or undefined, or omit the field entirely. The link will only be shown if the value is a string",
             "link": null,
             "highlights": [
                 "Delivering a website, mainly acting as a landing page that is packed with information",
@@ -113,7 +109,6 @@
         {
             "name": "Project Doodle",
             "year": 2020,
-            "__link__": "(optional) set it to null or undefined, or omit the field entirely. The link will only be shown if the value is a string",
             "link": null,
             "highlights": [
                 "Analysed classical arts from all around the world including their aspects, monetary gains and cultural background using analytical tools",
@@ -129,17 +124,16 @@
         "__description__": "Required field, set it to an empty array 'skills: []' if it is not relevant. This section will be hidden if it is set an empty array.",
         "__wide_screen__": "Only the FIRST THREE skills will be shown",
         "__small_screen__": "Only the FIRST THREE skills will be shown",
-        "__order__": "N/A"
+        "__order__": "N/A",
+        "__field_icon__": "(optional) Can be set to 'compter', 'book', 'film'. If set to null or undefined, the default icon shown will be 'film'"
     },
     "skills": [
         {
-            "__icon__": "(optional) Can be set to 'compter', 'book', 'film'. If set to null or undefined, the default icon shown will be 'film'",
             "icon": "computer",
             "name": "Web/Mobile Development",
             "description": "Proficient with HTML, CSS and JavaScript. Able to convert designs into web in no time!"
         },
         {
-            "__icon__": "(optional) Can be set to 'compter', 'book', 'film'. If set to null or undefined, the default icon shown will be 'film'",
             "icon": null,
             "name": "Machine Learning",
             "description": "Have a deep understanding and able to do the work across entire ML cycle"
