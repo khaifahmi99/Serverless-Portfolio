@@ -1,4 +1,11 @@
 {
+    "__author__": "Khai Fahmi",
+    "__link__": "https://github.com/khaifahmi99/serverless-portfolio",
+
+
+    "__IMPORTANT__": "Fields starting and ending with double underscore (__) are only meant as comments and guides, these fields will be ignored and removed after the build process",
+
+    
     "firstName": "Mike",
     "lastName": "Jones",
     "primaryEmail": "mjones@example.com",
