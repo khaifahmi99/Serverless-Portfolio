@@ -6,6 +6,10 @@ import { useProfileContext } from '../../ProfileContext';
 function Skill(): JSX.Element {
   const { skills } = useProfileContext();
 
+  if (skills.length < 1) {
+    return <></>;
+  }
+
   return (
     <div className="bg-indigo-100">
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8">

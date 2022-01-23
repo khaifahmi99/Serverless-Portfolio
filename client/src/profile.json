@@ -1,0 +1,161 @@
+{
+    "firstName": "Mike",
+    "lastName": "Jones",
+    "primaryEmail": "mjones@example.com",
+    "__secondaryEmail__": "(optional) can be set to string, null or undefined. Only used in Contact Me email CC",
+    "secondaryEmail": null,
+    "jobTitle": "Software Engineer",
+    "personalQuote": "Never Give Up!",
+    "briefDescription": "I am a fresh graduate with a background of software engineering. I am currently looking for oppotunities and currently working on personal projects as a hobby. During my free times, I enjoyed travelling and gardening",
+    "__links__": "(optional) links if not relevant can be set to null or undefined. Otherwise, you can set any or all links (github, linkedin, twitter)",
+    "links": {
+        "github": "https://khaifahmi99@gmail.com/khaifahmi99",
+        "linkedin": "https://www.linkedin.com/in/khaifahmi/",
+        "twitter": null
+    },
+    "__experiences__": {
+        "__description__": "Required field, set it to an empty array 'experiences: []' if it is not relevant. This section will be hidden if it is set an empty array.",
+        "__wide_screen__": "All experiences will be shown",
+        "__small_screen__": "Only the FIRST TWO experiences will be shown",
+        "__order__": "Please ensure that the experiences are ordered in a reverse cronological order. Starting with the most recent"
+    },
+    "experiences": [
+        {
+            "role": "Web Developer",
+            "company": "Company A",
+            "yearStart": 2021,
+            "__yearEnd__": "(optional) For experience that has no year end (such as your current work experience), either omit this field, set to undefined or null",
+            "yearEnd": null,
+            "highlights": [
+                "Improved the performance by 23% in the last year",
+                "Gained an increase of unique visitors by 66% in 2020"
+            ],
+            "__tags__": "(optional) array of strings, can be set to undefined, null or []",
+            "tags": [
+                "HTML",
+                "CSS"
+            ],
+            "__link__": "(optional) set it to null or undefined, or omit the field entirely. The link will only be shown if the value is a string",
+            "link": null
+        },
+        {
+            "role": "Intern Web Developer",
+            "company": "Company A",
+            "yearStart": 2020,
+            "__yearEnd__": "(optional) For experience that has no year end (such as your current work experience), either omit this field, set to undefined or null",
+            "yearEnd": 2021,
+            "highlights": [
+                "Developed a filtering mechanism for the catalog page"
+            ],
+            "__tags__": "(optional) array of strings, can be set to undefined, null or []",
+            "tags": [
+                "HTML",
+                "CSS"
+            ],
+            "__link__": "(optional) set it to null or undefined, or omit the field entirely. The link will only be shown if the value is a string",
+            "link": null
+        }
+    ],
+    "__educations__": {
+        "__description__": "Required field, set it to an empty array 'educations: []' if it is not relevant. This section will be hidden if it is set an empty array.",
+        "__wide_screen__": "All educations will be shown",
+        "__small_screen__": "All educations will be shown",
+        "__order__": "Please ensure that the educations are ordered in a reverse cronological order. Starting with the most recent"
+    },
+    "educations": [
+        {
+            "school": "University of Example",
+            "program": "Bachelor in Computer Science",
+            "yearStart": 2017,
+            "__yearEnd__": "(optional) For educations that has no year end (not graduated), either omit this field, set to undefined or null",
+            "yearEnd": 2019,
+            "description": "Graduated from a 3-years bachelor programme with a CGPA of 3.2 (total of 24 units) . Majoring in Web Development and had completed a Final Year Project of creating an HTML Game using Javascript, CSS and HTML"
+        },
+        {
+            "school": "Example College",
+            "program": "Cambridge A-Levels",
+            "yearStart": 2016,
+            "__yearEnd__": "(optional) For educations that has no year end (not graduated), either omit this field, set to undefined or null",
+            "yearEnd": 2017,
+            "description": "A one-year program as a part of a requirement to qualify into a bachelor programe in Australia"
+        }
+    ],
+    "__projects__": {
+        "__description__": "Required field, set it to an empty array 'projects: []' if it is not relevant. This section will be hidden if it is set an empty array.",
+        "__wide_screen__": "All projects will be shown",
+        "__small_screen__": "Only the FIRST TWO projects will be shown",
+        "__order__": "Please ensure that the projects are ordered in a reverse cronological order. Starting with the most recent"
+    },
+    "projects": [
+        {
+            "name": "Project ABC",
+            "year": 2021,
+            "__link__": "(optional) set it to null or undefined, or omit the field entirely. The link will only be shown if the value is a string",
+            "link": null,
+            "highlights": [
+                "Delivering a website, mainly acting as a landing page that is packed with information",
+                "Integrate a bunch of jQuery methods such as animation, transition and interaction"
+            ],
+            "tags": [
+                "JavaScript",
+                "jQuery",
+                "Git",
+                "CSS"
+            ]
+        },
+        {
+            "name": "Project Doodle",
+            "year": 2020,
+            "__link__": "(optional) set it to null or undefined, or omit the field entirely. The link will only be shown if the value is a string",
+            "link": null,
+            "highlights": [
+                "Analysed classical arts from all around the world including their aspects, monetary gains and cultural background using analytical tools",
+                "Part of a research project in the Arts and Culture Faculty" 
+            ],
+            "tags": [
+                "Microsoft Excel",
+                "Power BI"
+            ]
+        }
+    ],
+    "__skills__": {
+        "__description__": "Required field, set it to an empty array 'skills: []' if it is not relevant. This section will be hidden if it is set an empty array.",
+        "__wide_screen__": "Only the FIRST THREE skills will be shown",
+        "__small_screen__": "Only the FIRST THREE skills will be shown",
+        "__order__": "N/A"
+    },
+    "skills": [
+        {
+            "__icon__": "(optional) Can be set to 'compter', 'book', 'film'. If set to null or undefined, the default icon shown will be 'film'",
+            "icon": "computer",
+            "name": "Web/Mobile Development",
+            "description": "Proficient with HTML, CSS and JavaScript. Able to convert designs into web in no time!"
+        },
+        {
+            "__icon__": "(optional) Can be set to 'compter', 'book', 'film'. If set to null or undefined, the default icon shown will be 'film'",
+            "icon": null,
+            "name": "Machine Learning",
+            "description": "Have a deep understanding and able to do the work across entire ML cycle"
+        }
+    ],
+    "__reviews__": {
+        "__description__": "Required field, set it to an empty array 'reviews: []' if it is not relevant. This section will be hidden if it is set an empty array.",
+        "__wide_screen__": "All reviews will be shown",
+        "__small_screen__": "Only the FIRST THREE reviews will be shown",
+        "__order__": "N/A"
+    },
+    "reviews": [
+        {
+            "quote": "Talented and always show great effort in delivering high quality work",
+            "reviewer": "Laura Peterson",
+            "jobTitle": "Lecturer",
+            "companyName": "Example College"
+        },
+        {
+            "quote": "Dedicated and passionate, and willing to learn anything",
+            "reviewer": "Dr. John Teiger",
+            "jobTitle": "Researcher",
+            "companyName": "Example College"
+        }
+    ]
+}
