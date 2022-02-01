@@ -21,7 +21,7 @@ function Skill(): JSX.Element {
           {/* only show top 3 skills */}
           {skills.slice(0, 3).map((skill, idx) => (
             <div id={`skill-${idx}`} className="w-full h-80 md:w-80 mb-4">
-              <Card variant="light">
+              <Card variant="light" withBorder>
                 <div className="flex flex-col w-full h-full p-8 text-center">
                   <div className="flex justify-center">
                     <div className={`flex justify-center items-center rounded-full ${theme.bg600} w-24 h-24 border-4 ${theme.borderLight} mb-4`}>
