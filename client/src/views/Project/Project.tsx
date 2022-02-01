@@ -3,9 +3,12 @@ import React from 'react';
 import { InformationCard } from '../../components/Card';
 import Title from '../../components/Title';
 import { useProfileContext } from '../../contexts/ProfileContext';
+import { useThemeColorContext } from '../../contexts/ThemeContext';
 
 function Project(): JSX.Element {
   const { projects: rawProjects } = useProfileContext();
+  const theme = useThemeColorContext();
+
   const projects = rawProjects.map((project, idx) => ({
     id: `project-id-${idx}`,
     ...project,
@@ -35,15 +38,15 @@ function Project(): JSX.Element {
         ))}
       </div>
       <div className="hidden lg:flex flex-row space-x-4 w-full h-96">
-        <div className="hidden lg:block w-1/2 overflow-y-auto border-t-2 border-indigo-100">
+        <div className={`hidden lg:block w-1/2 overflow-y-auto border-t-2 ${theme.borderLight}`}>
           {projects.map((project, idx) => (
             <div
               id={`project-${idx}`}
-              className="flex flex-row h-16 py-4 border-b-2 border-indigo-100"
+              className={`flex flex-row h-16 py-4 border-b-2 ${theme.borderLight}`}
               onClick={() => setActiveProject(project)}
             >
               <p className={`text-center text-gray-600 ${project.id === activeProject.id ? 'font-bold' : ''} w-full`}>{project.name}</p>
-              <ChevronDoubleRightIcon className="h-6 w-6 mr-4 text-indigo-400" />
+              <ChevronDoubleRightIcon className={`h-6 w-6 mr-4 ${theme.text400}`} />
             </div>
           ))}
         </div>

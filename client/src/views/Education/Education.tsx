@@ -1,12 +1,14 @@
 import Timeline from '../../components/Timeline';
 import Title from '../../components/Title';
 import { useProfileContext } from '../../contexts/ProfileContext';
+import { useThemeColorContext } from '../../contexts/ThemeContext';
 
 function Education(): JSX.Element {
   const { educations } = useProfileContext();
+  const theme = useThemeColorContext();
 
   return (
-    <div className="bg-indigo-100">
+    <div className={theme.bg100}>
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8">
         <Title text="Educations" />
 

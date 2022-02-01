@@ -20,8 +20,11 @@ interface Theme {
     bg600: string;
     bg700: string;
     bg800: string;
+    borderLight: string;
+    borderDark: string;
 }
-const defaultColor = 'green';
+
+const defaultColor = 'emerald';
 const defaultThemeColor = COLORS[defaultColor];
 
 const ThemeColorContext = createContext<Theme>(defaultThemeColor);

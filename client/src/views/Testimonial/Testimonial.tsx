@@ -1,9 +1,12 @@
 import React from 'react';
 import Title from '../../components/Title';
 import { useProfileContext } from '../../contexts/ProfileContext';
+import { useThemeColorContext } from '../../contexts/ThemeContext';
 
 function Testimonial(): JSX.Element {
   const profile = useProfileContext();
+  const theme = useThemeColorContext();
+
   const reviews = profile.reviews.map((review, idx) => ({
     id: `review-id-${idx}`,
     ...review,
@@ -22,7 +25,7 @@ function Testimonial(): JSX.Element {
 
       <div className="text-center">
         <div className="h-48 flex items-center">
-          <h1 className="italic font-semibold text-5xl text-indigo-500 mb-12 mx-auto w-full lg:w-3/5">
+          <h1 className={`italic font-semibold text-5xl ${theme.text500} mb-12 mx-auto w-full lg:w-3/5`}>
             &quot;
             {activeReview.quote}
             &quot;
@@ -43,11 +46,11 @@ function Testimonial(): JSX.Element {
       <div className="flex flex-row justify-center space-x-2 pt-4">
         {reviews.slice(0, 3).map((review) => {
           const isActive = review.id === activeReview.id;
-          const backgroundColor = isActive ? 'bg-indigo-500' : 'bg-indigo-200';
+          const backgroundColor = isActive ? theme.bg500 : theme.bg200;
 
           return (
             <span
-              className={`${backgroundColor} rounded-full h-4 w-4 hover:bg-indigo-500`}
+              className={`${backgroundColor} rounded-full h-4 w-4 hover:bg-gray-200`}
               onClick={() => setActiveReview(review)}
             />
           );

@@ -2,16 +2,18 @@ import { DesktopComputerIcon, FilmIcon } from '@heroicons/react/solid';
 import Card from '../../components/Card';
 import Title from '../../components/Title';
 import { useProfileContext } from '../../contexts/ProfileContext';
+import { useThemeColorContext } from '../../contexts/ThemeContext';
 
 function Skill(): JSX.Element {
   const { skills } = useProfileContext();
+  const theme = useThemeColorContext();
 
   if (skills.length < 1) {
     return <></>;
   }
 
   return (
-    <div className="bg-indigo-100">
+    <div className={theme.bg100}>
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8">
         <Title text="Specialties" />
 
@@ -22,7 +24,7 @@ function Skill(): JSX.Element {
               <Card variant="light">
                 <div className="flex flex-col w-full h-full p-8 text-center">
                   <div className="flex justify-center">
-                    <div className="flex justify-center items-center rounded-full bg-indigo-500 w-24 h-24 border-4 border-indigo-200 mb-4">
+                    <div className={`flex justify-center items-center rounded-full ${theme.bg600} w-24 h-24 border-4 ${theme.borderLight} mb-4`}>
                       {skill.icon === 'computer' ? (
                         <DesktopComputerIcon className="text-white h-12 w-12 mb-2" />
                       ) : (
