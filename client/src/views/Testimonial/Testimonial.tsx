@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../../components/Title';
-import { useProfileContext } from '../../ProfileContext';
+import { useProfileContext } from '../../contexts/ProfileContext';
 
 function Testimonial(): JSX.Element {
   const profile = useProfileContext();

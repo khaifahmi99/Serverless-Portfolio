@@ -1,6 +1,6 @@
 import { GithubIcon, LinkedinIcon, TwitterIcon } from '../../components/Icons';
 import Title from '../../components/Title';
-import { useProfileContext } from '../../ProfileContext';
+import { useProfileContext } from '../../contexts/ProfileContext';
 
 function Contact(): JSX.Element {
   const { primaryEmail, secondaryEmail, links } = useProfileContext();

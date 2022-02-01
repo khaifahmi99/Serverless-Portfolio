@@ -1,6 +1,6 @@
 import Timeline from '../../components/Timeline';
 import Title from '../../components/Title';
-import { useProfileContext } from '../../ProfileContext';
+import { useProfileContext } from '../../contexts/ProfileContext';
 
 function Education(): JSX.Element {
   const { educations } = useProfileContext();

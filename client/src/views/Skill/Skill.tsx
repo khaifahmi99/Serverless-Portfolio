@@ -1,7 +1,7 @@
 import { DesktopComputerIcon, FilmIcon } from '@heroicons/react/solid';
 import Card from '../../components/Card';
 import Title from '../../components/Title';
-import { useProfileContext } from '../../ProfileContext';
+import { useProfileContext } from '../../contexts/ProfileContext';
 
 function Skill(): JSX.Element {
   const { skills } = useProfileContext();

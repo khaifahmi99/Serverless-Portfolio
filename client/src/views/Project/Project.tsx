@@ -2,7 +2,7 @@ import { ChevronDoubleRightIcon } from '@heroicons/react/solid';
 import React from 'react';
 import { InformationCard } from '../../components/Card';
 import Title from '../../components/Title';
-import { useProfileContext } from '../../ProfileContext';
+import { useProfileContext } from '../../contexts/ProfileContext';
 
 function Project(): JSX.Element {
   const { projects: rawProjects } = useProfileContext();

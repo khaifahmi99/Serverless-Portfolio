@@ -4,7 +4,7 @@ import { ChevronDoubleLeftIcon } from '@heroicons/react/solid';
 import { InformationCard } from '../../components/Card';
 import Title from '../../components/Title';
 import { Duration } from '../../components/Card/InformationCard';
-import { useProfileContext } from '../../ProfileContext';
+import { useProfileContext } from '../../contexts/ProfileContext';
 
 function Experience(): JSX.Element {
   const profile = useProfileContext();

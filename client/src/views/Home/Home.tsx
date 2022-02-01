@@ -1,6 +1,6 @@
 import { QuoteCard } from '../../components/Card';
 import { GithubIcon, TwitterIcon, LinkedinIcon } from '../../components/Icons';
-import { useProfileContext } from '../../ProfileContext';
+import { useProfileContext } from '../../contexts/ProfileContext';
 
 function Home(): JSX.Element {
   const profile = useProfileContext();
