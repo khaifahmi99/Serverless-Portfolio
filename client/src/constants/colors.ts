@@ -1,3 +1,6 @@
+export type ThemeColor = 'indigo' | 'sky' | 'emerald';
+export const THEME_COLORS = ['indigo', 'sky', 'emerald'];
+
 const COLORS = {
   sky: {
     text100: 'text-sky-100',

@@ -1,5 +1,7 @@
 import { createContext, FC, useContext } from 'react';
-import COLORS from '../constants/colors';
+import COLORS, { ThemeColor, THEME_COLORS } from '../constants/colors';
+import metaFile from '../meta.json';
+import { Basic } from '../types/Basic';
 
 interface Theme {
     text100: string;
@@ -24,8 +26,13 @@ interface Theme {
     borderDark: string;
 }
 
-const defaultColor = 'emerald';
-const defaultThemeColor = COLORS[defaultColor];
+const isColorValid = (color: string) => THEME_COLORS.includes(color);
+
+const defaultProfile: Basic = metaFile;
+const defaultColor = defaultProfile.themeColor && isColorValid(defaultProfile.themeColor)
+  ? defaultProfile.themeColor
+  : 'indigo';
+const defaultThemeColor = COLORS[defaultColor as ThemeColor];
 
 const ThemeColorContext = createContext<Theme>(defaultThemeColor);
 
