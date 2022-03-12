@@ -2,6 +2,7 @@ import { ExternalLinkIcon } from '@heroicons/react/outline';
 import { CheckCircleIcon } from '@heroicons/react/solid';
 import { FC } from 'react';
 import Card from '.';
+import { useThemeColorContext } from '../../contexts/ThemeContext';
 import { CardProps } from './Card';
 
 export type Duration = [number, number | null];
@@ -21,6 +22,8 @@ const InformationCard: FC<InformationCardProps> = ({
   highlights,
   meta,
 }) => {
+  const theme = useThemeColorContext();
+
   const duration = timePeriod ? `${timePeriod[0]}${timePeriod[1] ? ` - ${timePeriod[1]}` : ''}` : '';
 
   return (
@@ -55,7 +58,7 @@ const InformationCard: FC<InformationCardProps> = ({
             {meta?.slice(0, 5).map((item, idx) => (
               <span
                 id={`item-${idx}`}
-                className="px-2 py-1 bg-white font-semibold text-indigo-600 ml-2 rounded-lg truncate"
+                className={`px-2 py-1 bg-white font-semibold ${theme.text600} ml-2 rounded-lg truncate`}
               >
                 {item}
               </span>

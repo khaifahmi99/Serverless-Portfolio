@@ -11,4 +11,5 @@ export interface Basic {
         linkedin?: string | null | undefined;
         twitter?: string | null | undefined;
     };
+    themeColor?: string | null | undefined;
 }

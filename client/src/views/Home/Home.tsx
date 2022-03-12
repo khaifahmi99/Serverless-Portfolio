@@ -1,12 +1,15 @@
 import { QuoteCard } from '../../components/Card';
 import { GithubIcon, TwitterIcon, LinkedinIcon } from '../../components/Icons';
-import { useProfileContext } from '../../ProfileContext';
+import { useProfileContext } from '../../contexts/ProfileContext';
+import { useThemeColorContext } from '../../contexts/ThemeContext';
 
 function Home(): JSX.Element {
   const profile = useProfileContext();
 
+  const themeColor = useThemeColorContext();
+
   return (
-    <div className="bg-indigo-100">
+    <div className={themeColor.bg100}>
       <div className="max-w-7xl mx-auto z-20">
         <div className="flex flex-row">
           <div className="lg:w-3/5 md:w-full pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
@@ -15,7 +18,7 @@ function Home(): JSX.Element {
                 <div className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                   <h2 className="text-5xl">{profile.jobTitle}</h2>
                   {' '}
-                  <h2 className="text-indigo-600 text-6xl">
+                  <h2 className={`${themeColor.text600} text-6xl`}>
                     {profile.firstName}
                     {' '}
                     {profile.lastName}
@@ -28,7 +31,7 @@ function Home(): JSX.Element {
                   {profile.links?.github && (
                     <a
                       href={profile.links.github}
-                      className="h-8 w-8 mr-6 hover:text-indigo-600"
+                      className={`h-8 w-8 mr-6 ${themeColor.hoverDark}`}
                     >
                       <GithubIcon />
                     </a>
@@ -36,7 +39,7 @@ function Home(): JSX.Element {
                   {profile.links?.twitter && (
                     <a
                       href={profile.links.twitter}
-                      className="h-8 w-8 mr-6 hover:text-indigo-600"
+                      className={`h-8 w-8 mr-6 ${themeColor.hoverDark}`}
                     >
                       <TwitterIcon />
                     </a>
@@ -44,7 +47,7 @@ function Home(): JSX.Element {
                   {profile.links?.linkedin && (
                     <a
                       href={profile.links.linkedin}
-                      className="h-8 w-8 mr-6 hover:text-indigo-600"
+                      className={`h-8 w-8 mr-6 ${themeColor.hoverDark}`}
                     >
                       <LinkedinIcon />
                     </a>
@@ -53,7 +56,7 @@ function Home(): JSX.Element {
               </div>
             </div>
           </div>
-          <div className="items-center justify-center hidden lg:flex border-4">
+          <div className="items-center justify-center hidden lg:flex">
             <div className="h-80 w-80">
               <QuoteCard quote={`"${profile.personalQuote}"`} />
             </div>

@@ -1,13 +1,16 @@
 import { GithubIcon, LinkedinIcon, TwitterIcon } from '../../components/Icons';
 import Title from '../../components/Title';
-import { useProfileContext } from '../../ProfileContext';
+import { useProfileContext } from '../../contexts/ProfileContext';
+import { useThemeColorContext } from '../../contexts/ThemeContext';
 
 function Contact(): JSX.Element {
+  const theme = useThemeColorContext();
+
   const { primaryEmail, secondaryEmail, links } = useProfileContext();
   const subject = 'Reaching Out from Portfolio!';
 
   return (
-    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-8 pb-28 my-16 bg-indigo-500 shadow-xl rounded-xl text-white">
+    <div className={`max-w-7xl mx-auto sm:px-6 lg:px-8 pt-8 pb-28 my-16 ${theme.bg600} shadow-xl rounded-xl text-white`}>
       <Title text="Contact" variant="light" />
       <div className="flex lg:flex-row">
         <div className="w-full lg:w-1/2">
@@ -28,17 +31,17 @@ function Contact(): JSX.Element {
           </div>
           <div className="flex flex-row pt-4">
             {links?.github && (
-            <a href={links.github} className="h-8 w-8 mr-6 hover:text-indigo-300">
+            <a href={links.github} className={`h-8 w-8 mr-6 ${theme.hoverLight}`}>
               <GithubIcon />
             </a>
             )}
             {links?.twitter && (
-            <a href={links.twitter} className="h-8 w-8 mr-6 hover:text-indigo-300">
+            <a href={links.twitter} className={`h-8 w-8 mr-6 ${theme.hoverLight}`}>
               <TwitterIcon />
             </a>
             )}
             {links?.linkedin && (
-            <a href={links.linkedin} className="h-8 w-8 mr-6 hover:text-indigo-300">
+            <a href={links.linkedin} className={`h-8 w-8 mr-6 ${theme.hoverLight}`}>
               <LinkedinIcon />
             </a>
             )}

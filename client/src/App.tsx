@@ -1,4 +1,4 @@
-import ProfileProvider from './ProfileContext';
+import ProfileProvider from './contexts/ProfileContext';
 import Contact from './views/Contact';
 import Education from './views/Education';
 import Experience from './views/Experience';

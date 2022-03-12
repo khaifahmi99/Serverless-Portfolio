@@ -3,7 +3,7 @@ import Card from '.';
 import { CardProps } from './Card';
 
 interface QuoteCardProps extends CardProps {
-    quote: string;
+  quote: string;
 }
 
 const QuoteCard: FC<QuoteCardProps> = ({

@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { useThemeColorContext } from '../../contexts/ThemeContext';
 
 export interface TitleProps {
     text: string;
@@ -9,7 +10,9 @@ const Title: FC<TitleProps> = ({
   text,
   variant = 'dark',
 }) => {
-  const fontColor = variant === 'dark' ? 'text-indigo-600' : 'text-indigo-100';
+  const theme = useThemeColorContext();
+
+  const fontColor = variant === 'dark' ? theme.text600 : theme.text100;
 
   return (
     <div className="pb-14 pt-14 flex flex-row">

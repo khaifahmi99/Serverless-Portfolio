@@ -20,6 +20,8 @@
         "linkedin": "https://www.linkedin.com/in/khaifahmi/",
         "twitter": null
     },
+    "__themeColor__": "Currently, the themeColor can only be either 'emerald', 'sky' or 'indigo'. By default or in case of fall back, 'indigo' theme will be set. More colors will be supported in the future",
+    "themeColor": "invalid",
     "__experiences__": {
         "__description__": "Required field, set it to an empty array 'experiences: []' if it is not relevant. This section will be hidden if it is set an empty array.",
         "__wide_screen__": "All experiences will be shown",

@@ -4,10 +4,13 @@ import { ChevronDoubleLeftIcon } from '@heroicons/react/solid';
 import { InformationCard } from '../../components/Card';
 import Title from '../../components/Title';
 import { Duration } from '../../components/Card/InformationCard';
-import { useProfileContext } from '../../ProfileContext';
+import { useProfileContext } from '../../contexts/ProfileContext';
+import { useThemeColorContext } from '../../contexts/ThemeContext';
 
 function Experience(): JSX.Element {
   const profile = useProfileContext();
+  const theme = useThemeColorContext();
+
   const EXPERIENCES = profile.experiences.map((experience, idx) => ({
     id: `experience-id-${idx}`,
     ...experience,
@@ -48,14 +51,14 @@ function Experience(): JSX.Element {
             highlights={activeExperience.highlights}
           />
         </div>
-        <div className="hidden lg:block w-1/2 overflow-y-auto border-t-2 border-indigo-100">
+        <div className={`hidden lg:block w-1/2 overflow-y-auto border-t-2 ${theme.borderLight}`}>
           {EXPERIENCES.map((exp, idx) => (
             <div
               id={`exp-${idx}`}
-              className="flex flex-row h-16 py-4 border-b-2 border-indigo-100"
+              className={`flex flex-row h-16 py-4 border-b-2 ${theme.borderLight}`}
               onClick={() => setActiveExperience(exp)}
             >
-              <ChevronDoubleLeftIcon className="h-6 w-6 mr-4 text-indigo-400" />
+              <ChevronDoubleLeftIcon className={`h-6 w-6 mr-4 ${theme.text400}`} />
               <p className={`text-center text-gray-600 ${exp.id === activeExperience.id ? 'font-bold' : ''} w-full`}>
                 {exp.role}
                 @

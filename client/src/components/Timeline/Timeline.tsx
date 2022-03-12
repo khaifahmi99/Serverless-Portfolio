@@ -1,3 +1,4 @@
+import { useThemeColorContext } from '../../contexts/ThemeContext';
 import { Duration } from '../Card/InformationCard';
 
 export interface TimelineItem {
@@ -12,9 +13,11 @@ export interface TimelineProps {
 }
 
 function Timeline({ items }: TimelineProps): JSX.Element {
+  const theme = useThemeColorContext();
+
   return (
     <div className="relative wrap overflow-hidden p-10 h-full text-white">
-      <div className="border-2-2 absolute border-indigo-500 h-full border" style={{ left: '50%' }} />
+      <div className={`border-2-2 absolute ${theme.borderDark} h-full border`} style={{ left: '50%' }} />
 
       {items.map((item, idx) => {
         const isAlternate = idx % 2 === 0;
@@ -22,8 +25,8 @@ function Timeline({ items }: TimelineProps): JSX.Element {
         return (
           <div className={`mb-8 flex justify-between items-center w-full ${position}`}>
             <div className="order-1 w-5/12" />
-            <div className="z-10 flex items-center order-1 shadow-xl w-8 h-8 rounded-full bg-indigo-300 border-4 border-indigo-500" />
-            <div className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4 bg-indigo-500 text-opacity-70">
+            <div className={`z-10 flex items-center order-1 shadow-xl w-8 h-8 rounded-full ${theme.bg500} border-4 ${theme.borderLight}`} />
+            <div className={`order-1 rounded-lg shadow-xl w-5/12 px-6 py-4 ${theme.bg600} text-opacity-70`}>
               {item.period && (
                 <span className="hidden lg:flex">
                   {item.period[0]}
