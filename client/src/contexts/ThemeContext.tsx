@@ -24,6 +24,8 @@ interface Theme {
     bg800: string;
     borderLight: string;
     borderDark: string;
+    hexLight: string;
+    hexDark: string;
 }
 
 const isColorValid = (color: string) => THEME_COLORS.includes(color);

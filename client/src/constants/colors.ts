@@ -23,6 +23,8 @@ const COLORS = {
     bg800: 'bg-sky-800',
     borderLight: 'border-sky-200',
     borderDark: 'border-sky-500',
+    hexLight: '',
+    hexDark: '#0ea4e9',
   },
   emerald: {
     text100: 'text-emerald-100',
@@ -45,6 +47,8 @@ const COLORS = {
     bg800: 'bg-emerald-800',
     borderLight: 'border-emerald-200',
     borderDark: 'border-emerald-500',
+    hexLight: '',
+    hexDark: '#10b981',
   },
   indigo: {
     text100: 'text-indigo-100',
@@ -67,6 +71,8 @@ const COLORS = {
     bg800: 'bg-indigo-800',
     borderLight: 'border-indigo-200',
     borderDark: 'border-indigo-500',
+    hexLight: '',
+    hexDark: '#6365f1',
   },
 };
 

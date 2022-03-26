@@ -1,4 +1,8 @@
-import { QuoteCard } from '../../components/Card';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import { CircleGrid } from 'react-awesome-shapes';
+
+// import { QuoteCard } from '../../components/Card';
 import { GithubIcon, TwitterIcon, LinkedinIcon } from '../../components/Icons';
 import { useProfileContext } from '../../contexts/ProfileContext';
 import { useThemeColorContext } from '../../contexts/ThemeContext';
@@ -58,7 +62,13 @@ function Home(): JSX.Element {
           </div>
           <div className="items-center justify-center hidden lg:flex">
             <div className="h-80 w-80">
-              <QuoteCard quote={`"${profile.personalQuote}"`} />
+              {/* <QuoteCard quote={`"${profile.personalQuote}"`} /> */}
+              <CircleGrid
+                position="relative"
+                color={themeColor.hexDark}
+                size="19em"
+                zIndex={2}
+              />
             </div>
           </div>
         </div>
