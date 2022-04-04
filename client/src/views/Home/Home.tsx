@@ -1,6 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
+// @ts-ignore
 import { CircleGrid } from 'react-awesome-shapes';
+import { useEffect, useState } from 'react';
 
 // import { QuoteCard } from '../../components/Card';
 import { GithubIcon, TwitterIcon, LinkedinIcon } from '../../components/Icons';
@@ -8,9 +9,47 @@ import { useProfileContext } from '../../contexts/ProfileContext';
 import { useThemeColorContext } from '../../contexts/ThemeContext';
 
 function Home(): JSX.Element {
+  const [counter, setCounter] = useState<number>(0);
   const profile = useProfileContext();
 
   const themeColor = useThemeColorContext();
+
+  const generateTitle = (index: number): string => {
+    let title = '';
+    switch (index) {
+      case 0:
+        title = '✨';
+        break;
+      case 1:
+        title = '🔥';
+        break;
+      case 2:
+        title = '⚡️';
+        break;
+      default:
+        break;
+    }
+
+    title = `${profile.firstName} ${profile.lastName} ${title}`;
+
+    return title;
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const title = generateTitle(counter);
+      document.title = title;
+      setCounter((prev) => {
+        const newValue = prev + 1;
+        if (newValue > 2) {
+          return 0;
+        }
+        return newValue;
+      });
+    }, 2_000);
+
+    return () => clearInterval(interval);
+  }, [counter]);
 
   return (
     <div className={themeColor.bg100}>
